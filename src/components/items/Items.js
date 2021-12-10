@@ -102,6 +102,10 @@ export default class Items extends Component {
             alert('Title field is required.');
 
             return;
+        } else if (title.length > 255) {
+            alert('Title field can not be larger than 255 characters.');
+
+            return;
         }
 
         if (description === "") {
@@ -171,6 +175,10 @@ export default class Items extends Component {
 
         if (title === "") {
             alert('Title field is required.');
+
+            return;
+        } else if (title.length > 255) {
+            alert('Title field can not be larger than 255 characters.');
 
             return;
         }
